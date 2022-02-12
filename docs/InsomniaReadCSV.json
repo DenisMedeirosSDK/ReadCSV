@@ -1,0 +1,104 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-02-12T12:25:34.496Z",
+  "__export_source": "insomnia.desktop.app:v2021.7.2",
+  "resources": [
+    {
+      "_id": "req_086fac7a95f54fbba02c95e9588ee824",
+      "parentId": "wrk_84ac15dae8a54e98ba2789101bcc4d62",
+      "modified": 1644668699620,
+      "created": 1644580477802,
+      "url": "{{ _.baseUlrl }}",
+      "name": "Read CSV And Save In Database",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_87e7340ad3fc482ab6fdbecabca4a89b",
+            "name": "file",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "/home/denis/Documents/Github/ReadCSV/data/fileTest.csv"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_a01a7b877ea44d6ea83832aaf3d898ef"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1644580477803,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_84ac15dae8a54e98ba2789101bcc4d62",
+      "parentId": null,
+      "modified": 1644580456483,
+      "created": 1644580456483,
+      "name": "ReadCSV",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_cbf963d92a3c4b0693b37501eb2da8d5",
+      "parentId": "wrk_84ac15dae8a54e98ba2789101bcc4d62",
+      "modified": 1644580456488,
+      "created": 1644580456488,
+      "name": "Base Environment",
+      "data": { "baseUlrl": "{{protocol}}://{{host}}:{{port}}" },
+      "dataPropertyOrder": { "&": ["baseUlrl"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1643840901613,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_853a7a7a5917421fbac076d75635d6f8",
+      "parentId": "wrk_84ac15dae8a54e98ba2789101bcc4d62",
+      "modified": 1644580456518,
+      "created": 1644580456518,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_4e45b5477e3e46cabc34a013035c49a0",
+      "parentId": "wrk_84ac15dae8a54e98ba2789101bcc4d62",
+      "modified": 1644580456643,
+      "created": 1644580456542,
+      "fileName": "ReadCSV",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_b68777f1fba64675abbe9dac70eb9560",
+      "parentId": "env_cbf963d92a3c4b0693b37501eb2da8d5",
+      "modified": 1644580456491,
+      "created": 1644580456491,
+      "name": "Development",
+      "data": { "protocol": "http", "host": "localhost", "port": "3333" },
+      "dataPropertyOrder": { "&": ["protocol", "host", "port"] },
+      "color": "#ff0000",
+      "isPrivate": false,
+      "metaSortKey": 1643840935060,
+      "_type": "environment"
+    }
+  ]
+}
